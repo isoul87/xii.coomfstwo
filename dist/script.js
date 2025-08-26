@@ -1,6 +1,3 @@
-
-
-
 // Navbar Fixed 
 
 window.onscroll = function () {
