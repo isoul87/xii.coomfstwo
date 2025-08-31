@@ -8,6 +8,10 @@ module.exports = {
       padding: '16px',
     },
     extend: {
+      // Menambahkan font family 
+      fontFamily: {
+        'Inter' : ['Inter', 'sans'],
+      },
       // Menambahkan definisi keyframes untuk animasi marquee
       keyframes: {
         marquee: {

@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>xii-coomfstwo</title>
 </head>
 <body class="">
-  <header class="bg-secondary absolute top-0 left-0 w-full flex items-center z-10 ">
+  <header class="bg-secondary absolute top-0 left-0 w-full flex items-center z-10" data-aos="fade-down">
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
@@ -61,20 +64,30 @@
   <!-- Hero Start -->
   <section id="home" class="panel w-full h-full">
      <div class="w-full h-[40em] bg-[url('/src/img/kls12.png')] text-slate-900 bg-cover bg-center flex flex-col items-center justify-center">
-      <h1 class="text-white font-bold text-center">WE LAUGH, WE BREAK, WE REMEMBER <span class="text-secondary">XII.COOMFSTWO</span> </h1>
+      <h1 class="text-white font-bold text-center text-lg" data-aos="fade-up">WE LAUGH, WE BREAK, WE REMEMBER <span class="text-secondary">XII.COOMFSTWO</span> </h1>
       <div class="flex gap-3 mt-4">
-        <div class="btn-primary hover:scale-105 transition-transform duration-300">
+        <div class="btn-primary hover:scale-105 transition-transform duration-300" data-aos="fade-up-right">
           <p>Wali Kelas</p>
         </div>
-        <div class="btn-secondary bg-primary rounded hover:shadow-xl hover:scale-105 hover:border-blue-500 transition-all duration-300">
+        <div class="btn-secondary bg-primary rounded hover:shadow-xl hover:scale-105 hover:border-blue-500 transition-all duration-300" data-aos="fade-up-left">
           <p>Anak Kelas</p>
         </div>
       </div>
      </div>
   </section>
   <!-- Hero End -->
+   <!-- Welcome start -->
+  <section class="container my-12" data-aos="fade-down">
+    <h1 class="title2" data-aos="fade-down">Welcome To My Class</h1>
+    <p class="font-bold mb-3 text-center text-sm text-slate-300">XII - COOMFSTWO, Kelas 12 - 2 </p>
+    <div class="flex justify-center my-12">
+        <img src="src/img/undraw_work-chat_hc3y.svg" alt="team.svg" class="w-1/3">
+    </div>
+        <p class="text-center">"Kami percaya bahwa kebersamaan ini hanyalah permulaan dari perjalanan yang lebih panjang. Website ini menjadi bukti bahwa persahabatan dan kenangan tidak pernah hilang, bahkan ketika kami melangkah ke arah yang berbeda setelah kelulusan. Semoga setiap kenangan yang tertulis dan tersimpan di sini bisa menjadi pengingat, bahwa di balik perjalanan hidup masing-masing, kami pernah menjadi bagian dari satu keluarga besar bernama XII COOMFSTWO."</p>
+  </section>
+   <!-- Welcome end -->
    <!-- Perkenalan start -->
-    <section id="profil" class="bg-slate-700">
+    <section id="profil" class="bg-slate-700" data-aos="fade-up">
 
     
         <div class="px-5 py-10">
@@ -225,7 +238,7 @@
                         <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
                         <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
                                 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold text-xs">Wildan</p>
+                            <p class="font-bold text-xs">Alfit</p>
                         </div>
                     </div>
 
@@ -239,8 +252,8 @@
                         <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
                         <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
                                 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold text-xs">Wildan</p>
-                            <p class="font-bold text-xs">Absen 11</p>
+                            <p class="font-bold text-xs">Silvia</p>
+                            
 
                         </div>
                     </div>
@@ -249,8 +262,8 @@
                         <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
                         <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
                                 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold text-xs">Wildan</p>
-                            <p class="font-bold text-xs">Absen 11</p>
+                            <p class="font-bold text-xs">Amel</p>
+                            
 
                         </div>
                     </div>
@@ -259,8 +272,8 @@
                         <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
                         <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
                                 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold text-xs">Wildan</p>
-                            <p class="font-bold text-xs">Absen 11</p>
+                            <p class="font-bold text-xs">Agung</p>
+                            
 
                         </div>
                     </div>
@@ -269,21 +282,11 @@
                         <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
                         <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
                                 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold text-xs">Wildan</p>
-                            <p class="font-bold text-xs">Absen 11</p>
+                            <p class="font-bold text-xs">Andre</p>
+                            
 
                         </div>
                     </div>
-
-                    <div class="relative group flex items-center w-24 h-32 shadow-xl">
-                        <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold text-xs">Wildan</p>
-                            <p class="font-bold text-xs">Absen 11</p>
-                        </div>
-                    </div>
-
 
                     
                 </div>
@@ -297,7 +300,7 @@
   </section>
    <!-- Perkenalan end -->
   <!-- Tentang Start-->
-  <section id="tentangkami" class="container bg-white pt-24">
+  <section id="tentangkami" class="container bg-white pt-24" data-aos="fade-down">
       <div class="bg-white py-5">
           <p class="title1 text-black ">TENTANG KAMI</p>
           <h1 class="title2">Fakta di kelas kami ?</h1>
@@ -376,8 +379,8 @@
 <!-- Jadwal pelajaran dan motivasi -->
 <!--Jadwal pelajaran dan motivasi End -->
 <!-- Countdown waktu kelulusan -->
- <section id="countdown" class="pt-24 mt-40">
-    <div class="flex px-5">
+ <section id="countdown" class="pt-24 mt-16">
+    <div class="flex px-5 justify-center" data-aos="fade-right">
 
    <div class="text-center">
         <h1 class="text-3xl md:text-5xl font-bold mb-2">Hitung Mundur ke lulusan</h1>
@@ -414,7 +417,7 @@
      </section>
 
 <!-- Lokasi -->
- <section id="lokasi" class="px-5 py-10 mt-52">
+ <section id="lokasi" class="px-5 py-10 my-52" data-aos="fade-up">
     <div class="flex-col ">
         <h1 class="title2 mb-10">Lokasi Kita</h1>
         <div>
@@ -434,9 +437,9 @@
     <!-- Foto -->
     
 
-    <section class="dev p-3 mt-52">
-        <div class="py-5 flex flex-col justify-center border-2 border-slate-400 rounded-lg shadow-xl">
-            <div class="flex justify-center" >
+    <section class="dev p-3" >
+        <div class="py-5 flex flex-col justify-center border-2 border-slate-400 rounded-lg shadow-xl" data-aos="zoom-in-up">
+            <div class="flex justify-center" data-aos="zoom-in-down" data-aos-delay="500">
                 <img src="src/img/naufal.JPG" alt="" class="w-32 h-32 object-cover object-center rounded-full shadow-xl">        
             </div>
 
@@ -449,10 +452,10 @@
 
     </section>
 
-    <footer class="mt-52">
+    <footer class="mt-52 bg-secondary">
         <!-- 1 2 3  -->
          <!-- 1 2 3 -->
-        <div class="px-4 py-10 flex flex-col bg-secondary gap-3">
+        <div class="px-4 py-10 flex flex-col gap-3 mb-12">
 
             <h1 class="font-bold text-2xl mb-6">XII - COOMFSTWO</h1>
 
@@ -481,15 +484,21 @@
                 </ul>
             </div>
 
+            <hr class="border-2">
         </div>  
+        <h1 class="text-center">Dibuat dengan ❤️ Oleh <span class="text-primary">Naufal Kuswandana</span>, menggunakan Tailwind CSS</h1>
     </footer>
 
    
-  <script src="dist/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="dist/slider.js"></script>
+<script src="dist/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script src="dist/slider.js"></script>
   <script src="dist/gsap.js"></script>
 </body>
 </html>

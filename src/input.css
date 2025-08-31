@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  
+}
 
 .navbar-fixed {
     @apply fixed z-[9999] bg-secondary bg-opacity-70 backdrop:blur-sm dark:bg-dark dark:bg-opacity-50;
