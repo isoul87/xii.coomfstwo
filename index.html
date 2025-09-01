@@ -23,7 +23,7 @@
                     <a href="#home" class="font-bold text-lg text-black block py-6">XII - II</a>
                 </div>
                 <div class="flex items-center px-4">
-                    <button id="hamburger" name="hambuger" type="button" class="block absolute right-4 lg:hidden">
+                    <button id="hamburger" name="hambuger" type="button" class="block absolute right-4 lg:hidden" aria-label="hambuger">
                         <span class="hambuger-line transition duration-350 ease-in-out origin-top-left"></span>
                         <span class="hambuger-line transition duration-350 ease-in-out"></span>
                         <span class="hambuger-line transition duration-350 ease-in-out  origin-bottom-left"></span>
@@ -73,10 +73,10 @@
       <h1 class="text-white font-bold text-center text-lg" data-aos="fade-up">WE LAUGH, WE BREAK, WE REMEMBER <span class="text-secondary">XII.COOMFSTWO</span> </h1>
       <div class="flex gap-3 mt-4">
         <div class="btn-primary hover:scale-105 transition-transform duration-300" data-aos="fade-up-right" data-aos-delay="500">
-          <a href="">Wali Kelas</a>
+          <a href="#walikelas">Wali Kelas</a>
         </div>
         <div class="btn-secondary bg-primary rounded hover:shadow-xl hover:scale-105 hover:border-blue-500 transition-all duration-300" data-aos="fade-up-left" data-aos-delay="500">
-          <a href="siswa">Anak Kelas</a>
+          <a href="#siswa">Anak Kelas</a>
         </div>
       </div>
      </div>
@@ -89,7 +89,7 @@
     <div class="flex justify-center my-12 w-full">
         <img src="src/img/undraw_work-chat_hc3y.svg" alt="team.svg" class="w-full p-40">
     </div>
-        <p class="text-center">"Kami percaya bahwa kebersamaan ini hanyalah permulaan dari perjalanan yang lebih panjang. Website ini menjadi bukti bahwa persahabatan dan kenangan tidak pernah hilang, bahkan ketika kami melangkah ke arah yang berbeda setelah kelulusan. Semoga setiap kenangan yang tertulis dan tersimpan di sini bisa menjadi pengingat, bahwa di balik perjalanan hidup masing-masing, kami pernah menjadi bagian dari satu keluarga besar bernama XII COOMFSTWO."</p>
+        <p class="text-center" id="walikelas">"Kami percaya bahwa kebersamaan ini hanyalah permulaan dari perjalanan yang lebih panjang. Website ini menjadi bukti bahwa persahabatan dan kenangan tidak pernah hilang, bahkan ketika kami melangkah ke arah yang berbeda setelah kelulusan. Semoga setiap kenangan yang tertulis dan tersimpan di sini bisa menjadi pengingat, bahwa di balik perjalanan hidup masing-masing, kami pernah menjadi bagian dari satu keluarga besar bernama XII COOMFSTWO."</p>
   </section>
    <!-- Welcome end -->
    <!-- Perkenalan start -->
@@ -97,7 +97,7 @@
 
     
         <div class="px-5 py-10">
-        <p class="title1">Profil Kelas</p>
+        <p class="title1" >Profil Kelas</p>
         <h1 class="title2 text-white">Siapa aja di kelas kami👋</h1>
 
             <div class="mb-12 mt-24">
@@ -113,13 +113,13 @@
                 <div class="flex flex-col items-center justify-center gap-3 mb-10">
                     <img src="src/img/abidah.jpg" alt="Pak jaka" class="w-32 h-32 object-cover border-2 p-1 border-secondary object-top rounded-[1000px]" data-aos="zoom-out-down" data-aos-delay="300">
                     <h1 class="paragraf text-white">Abidah Karimata Jaudah</h1>
-                    <p class="paragrafdes text-secondary">KETUA KELAS</p>
+                    <p class="paragrafdes text-secondary" id="siswa">KETUA KELAS</p>
                 </div>
             </div>
             
             
         </div>
-        <div class="pb-10" data-aos="zoom-in-up" data-aos-delay="200" id="siswa">
+        <div class="pb-10" data-aos="zoom-in-up" data-aos-delay="200">
             <p class="paragraf text-white mb-4">SISWA XII</p>
             <p class="text-center text-lg text-secondary ">Anggota siswa XII</p>
             <p class="text-white text-center mb-10">"Hover dibagian gambarnya👇"</p>
@@ -317,7 +317,7 @@
           </div>
           <div>
               <h1 class="text-center font-semibold text-lg mb-4">FAKTA KELAS KAMI</h1>
-              <ul class="list-disc ml-5">
+              <ul class="list-disc ml-5 space-x-5">
                   <li>Kami suka kalau ada tugas yang membutuhkan hp karena nanti bisa ambil hp di kantor</li>
                   <li>Kelas kami damai kalau semua tidur</li>
                   <li>Kelas kami ada wifi tapi punya kelas lain hehe</li>
@@ -497,10 +497,9 @@
 
    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="dist/script.js"></script>
+<script src="dist/script.js" defer></script>
 
 
-<script src="dist/slider.js"></script>
-  <script src="dist/gsap.js"></script>
+
 </body>
 </html>
