@@ -1,6 +1,9 @@
 // Navbar Fixed 
 
-window.onscroll = function () {
+    AOS.init();
+
+document.addEventListener("DOMContentLoaded", function() {
+    window.onscroll = function () {
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
     const toTop = document.querySelector('#toTop')
@@ -59,4 +62,7 @@ if(localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchM
     darkToggle.checked = true;
 } else {
     darkToggle.checked = false;
-}
+};
+
+
+});
