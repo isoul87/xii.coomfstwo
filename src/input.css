@@ -51,7 +51,7 @@ body {
   }
 
   .titledescription {
-    @apply text-center text-slate-500 mb-12 text-base md:text-xl;
+    @apply text-center text-slate-600 mb-12 text-base md:text-xl;
   }
 
   .paragraf {
