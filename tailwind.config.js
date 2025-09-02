@@ -11,7 +11,7 @@ module.exports = {
       // Menambahkan font family 
       fontFamily: {
         'Inter' : ['Inter', 'sans'],
-        'Poppins' : ['poppins', 'sans']
+        poppins: ['Poppins', 'sans-serif'],
       },
       // Menambahkan definisi keyframes untuk animasi marquee
       keyframes: {
