@@ -2,7 +2,7 @@
       const loaderElement = document.getElementById('loader');
       const mainContentElement = document.getElementById('main-content');
 
-      window.addEventListener('load', function() {
+      window.addEventListener('DOMContentLoaded', function() {
         loaderElement.classList.add('hidden'); // Sembunyikan loader
         mainContentElement.classList.remove('hidden'); // Tampilkan konten
       });
