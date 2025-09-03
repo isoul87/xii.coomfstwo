@@ -71,19 +71,28 @@
   <!-- Header End -->
   <!-- Hero Start -->
   <section id="home" class="panel w-full h-full">
-     <div class="w-full h-[40em] bg-[url('/src/img/kls12.png')] text-slate-900 bg-cover bg-center flex flex-col items-center justify-center">
-      <h1 class="text-white font-bold text-center text-lg md:text-2xl" data-aos="fade-up">WE LAUGH, WE BREAK, WE REMEMBER <span class="text-secondary">XII.COOMFSTWO</span> </h1>
-      <div class="flex gap-3 mt-4">
-        <div class="btn-home1 btn-primary hover:scale-105 transition-transform duration-300" >
-          <a href="#walikelas" class="md:text-lg">Wali Kelas</a>
+     <div class="relative w-full h-[40em] flex flex-col items-center justify-center overflow-hidden">
+        <!-- Background pakai <img> -->
+        <img src="/src/img/kls12.png" alt="Kelas XII COOMFSTWO" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-center z-0" />
+
+
+            <!-- Konten -->
+        <div class="relative z-20 text-center">
+            <h1 class="text-white font-bold text-lg md:text-2xl" data-aos="fade-up">WE LAUGH, WE BREAK, WE REMEMBER 
+            <span class="text-secondary">XII.COOMFSTWO</span>
+            </h1>
+            <div class="flex gap-3 mt-4 justify-center">
+                <div class="btn-home1 btn-primary hover:scale-105 transition-transform duration-300">
+                    <a href="#walikelas" class="md:text-lg z-30">Wali Kelas</a>
+                </div>
+            <div class="btn-home2 btn-secondary bg-primary rounded hover:shadow-xl hover:scale-105 hover:border-blue-500 transition-all duration-300">
+                <a href="#siswa" class="md:text-lg z-30">Anak Kelas</a>
+            </div>
         </div>
-        <div class="btn-home2 btn-secondary bg-primary rounded hover:shadow-xl hover:scale-105 hover:border-blue-500 transition-all duration-300">
-          <a href="#siswa" class="md:text-lg">Anak Kelas</a>
-        </div>
-      </div>
-     </div>
-  </section>
-  <!-- Hero End -->
+    </div>
+
+        </section>
+        <!-- Hero End -->
    <!-- Welcome start -->
   <section class="container my-12" data-aos="fade-down">
     <h1 class="title2 text-2xl md:text-4xl" data-aos="fade-down">Welcome To My Class</h1>
