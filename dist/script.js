@@ -6,8 +6,18 @@
         setTimeout(() => {
           loaderElement.classList.add('hidden'); // Sembunyikan loader
           mainContentElement.classList.remove('hidden'); // Tampilkan konten
+      gsap.from("#main-content", {
+      opacity: 0,
+      y: 40, // muncul dari bawah
+      duration: 1.2,
+      ease: "power3.out"
+    });
+
+
         }, 2000)
 
+        
+        
       });
     AOS.init();
 
