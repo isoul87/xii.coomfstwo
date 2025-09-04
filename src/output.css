@@ -658,6 +658,14 @@ video {
   z-index: 999;
 }
 
+.z-\[99\]{
+  z-index: 99;
+}
+
+.z-\[9\]{
+  z-index: 9;
+}
+
 .mx-8{
   margin-left: 2rem;
   margin-right: 2rem;
@@ -1796,6 +1804,18 @@ body {
 
   .md\:w-96{
     width: 24rem;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:justify-evenly{
+    justify-content: space-evenly;
   }
 
   .md\:gap-8{
