@@ -3,8 +3,11 @@
       const mainContentElement = document.getElementById('main-content');
 
       window.addEventListener('load', function() {
-        loaderElement.classList.add('hidden'); // Sembunyikan loader
-        mainContentElement.classList.remove('hidden'); // Tampilkan konten
+        setTimeout(() => {
+          loaderElement.classList.add('hidden'); // Sembunyikan loader
+          mainContentElement.classList.remove('hidden'); // Tampilkan konten
+        }, 2000)
+
       });
     AOS.init();
 

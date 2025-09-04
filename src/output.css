@@ -924,6 +924,77 @@ video {
   animation: spin var(--default-animation-duration, 1s) var(--default-animation-timing-function, linear) var(--default-animation-delay, 0s) infinite;
 }
 
+@keyframes wiggle{
+  0%, 100%{
+    transform: rotate(-3deg);
+  }
+
+  50%{
+    transform: rotate(3deg);
+  }
+}
+
+.animate-wiggle{
+  animation: wiggle var(--default-animation-duration, 1s) var(--default-animation-timing-function, ease) var(--default-animation-delay, 0s) both;
+}
+
+@keyframes fade-down{
+  0%{
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-down{
+  animation: fade-down var(--default-animation-duration, 1s) var(--default-animation-timing-function, ease) var(--default-animation-delay, 0s) both;
+}
+
+@keyframes ping{
+  75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping{
+  animation: ping var(--default-animation-duration, 1s) var(--default-animation-timing-function, cubic-bezier(0, 0, 0.2, 1)) var(--default-animation-delay, 0s) infinite;
+}
+
+@keyframes marquee{
+  0%{
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee{
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes bounce{
+  0%, 100%{
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce{
+  animation: bounce var(--default-animation-duration, 1s) var(--default-animation-timing-function, ease) var(--default-animation-delay, 0s) infinite;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -1389,6 +1460,46 @@ video {
 
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.animate-delay-1000{
+  animation-delay: 1000ms;
+}
+
+.animate-delay-\[\]{
+  animation-delay: ;
+}
+
+.animate-delay-\[500000ms\]{
+  animation-delay: 500000ms;
+}
+
+.animate-delay-\[1\]{
+  animation-delay: 1;
+}
+
+.animate-delay-\[1000\]{
+  animation-delay: 1000;
+}
+
+.animate-delay-\[4000\]{
+  animation-delay: 4000;
+}
+
+.animate-delay-\[4000ms\]{
+  animation-delay: 4000ms;
+}
+
+.animate-delay-\[3000ms\]{
+  animation-delay: 3000ms;
+}
+
+.animate-duration-700{
+  animation-duration: 700ms;
+}
+
+.animate-infinite{
+  animation-iteration-count: infinite;
 }
 
 body {

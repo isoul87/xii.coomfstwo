@@ -18,342 +18,345 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>xii-coomfstwo</title>
 </head>
-<body class="font-poppins hidden" id="main-content" >
-        <!-- Komponen Loader -->
+<body class="font-poppins" >
+    <!-- Komponen Loader -->
     <div id="loader" class="fixed inset-0 flex flex-col items-center justify-center bg-gray-100 z-50">
         <div>
-          <h1 class="font-bold text-xl animate-fade-up">Welcome My Friends in XII-COOMFSTWO</h1>
+          <h1 class="font-bold text-xl mb-10 text-center animate-bounce animate-infinite">Welcome My Friends <br> in XII-COOMFSTWO👋</h1>
         </div>
       <div class="animate-spin rounded-full h-16 w-16 border-4 border-blue-500 border-t-transparent"></div>
     </div>
 
+    <div id="main-content" class="">
 
-  <header class="bg-secondary absolute top-0 left-0 w-full flex items-center z-[999]" data-aos="fade-down">
-        <div class="container">
-            <div class="flex items-center justify-between relative">
-                <div class="px-4">
-                    <a href="#home" class="font-bold text-lg text-black block py-6">XII - II</a>
+        
+        
+        <header class="bg-secondary absolute top-0 left-0 w-full flex items-center z-[999] animate-fade-down animate-duration-700 animate-delay-[3000ms]" data-aos="fade-down">
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                    <div class="px-4">
+                        <a href="#home" class="font-bold text-lg text-black block py-6">XII - II</a>
+                    </div>
+                    <div class="flex items-center px-4">
+                        <button id="hamburger" name="hambuger" type="button" class="block absolute right-4 lg:hidden" aria-label="hambuger">
+                            <span class="hambuger-line transition duration-350 ease-in-out origin-top-left"></span>
+                            <span class="hambuger-line transition duration-350 ease-in-out"></span>
+                            <span class="hambuger-line transition duration-350 ease-in-out  origin-bottom-left"></span>
+                        </button>
+                        <nav id="navmenu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
+                            <ul class="block lg:flex">
+                                <li class="group">
+                                    <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="#home">Beranda</a>
+                                </li>
+                                <li class="group">
+                                    <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="#profil">Profil</a>
+                                </li>
+                                <li class="group">
+                                    <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="#tentangkami">Tentang Kami</a>
+                                </li>
+                                <li class="group">
+                                    <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="#galeri">Galeri</a>
+                                </li>
+                                <li class="group">
+                                    <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="#countdown">Last</a>
+                                </li>
+                                <li class="group">
+                                    <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="#lokasi">Locate</a>
+                                </li>
+                                <li class="flex items-center pl-8 mt-3 lg:mt-0">
+                                    <!-- <div class="flex">
+                                        <span class="mr-2 text-sm text-slate-500">Light</span>
+                                        <input type="checkbox" class="hidden" id="dark-toggle">
+                                        <label for="dark-toggle">
+                                            <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                                <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-out"></div>
+                                            </div>
+                                        </label>
+                                        <span class="ml-2 text-sm text-slate-500">Dark</span>
+                                    </div> -->
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="flex items-center px-4">
-                    <button id="hamburger" name="hambuger" type="button" class="block absolute right-4 lg:hidden" aria-label="hambuger">
-                        <span class="hambuger-line transition duration-350 ease-in-out origin-top-left"></span>
-                        <span class="hambuger-line transition duration-350 ease-in-out"></span>
-                        <span class="hambuger-line transition duration-350 ease-in-out  origin-bottom-left"></span>
-                    </button>
-                    <nav id="navmenu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
-                        <ul class="block lg:flex">
-                            <li class="group">
-                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="#home">Beranda</a>
-                            </li>
-                            <li class="group">
-                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="#profil">Profil</a>
-                            </li>
-                            <li class="group">
-                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="#tentangkami">Tentang Kami</a>
-                            </li>
-                            <li class="group">
-                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="#galeri">Galeri</a>
-                            </li>
-                            <li class="group">
-                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="#countdown">Last</a>
-                            </li>
-                            <li class="group">
-                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="#lokasi">Locate</a>
-                            </li>
-                            <li class="flex items-center pl-8 mt-3 lg:mt-0">
-                                <!-- <div class="flex">
-                                    <span class="mr-2 text-sm text-slate-500">Light</span>
-                                    <input type="checkbox" class="hidden" id="dark-toggle">
-                                    <label for="dark-toggle">
-                                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-out"></div>
-                                        </div>
-                                    </label>
-                                    <span class="ml-2 text-sm text-slate-500">Dark</span>
-                                </div> -->
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
         </div>
-     </header>
-  <!-- Header End -->
-  <!-- Hero Start -->
-  <section id="home" class="panel w-full h-full">
-     <div class="relative w-full h-[40em] flex flex-col items-center justify-center overflow-hidden">
-        <!-- Background pakai <img> -->
-        <img src="/src/img/kls12.png" alt="Kelas XII COOMFSTWO" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-center z-0" />
-
-
+    </header>
+    <!-- Header End -->
+    <!-- Hero Start -->
+    <section id="home" class="panel w-full h-full">
+        <div class="relative w-full h-[40em] flex flex-col items-center justify-center overflow-hidden">
+            <!-- Background pakai <img> -->
+            <img src="/src/img/kls12.png" alt="Kelas XII COOMFSTWO" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-center z-0" />
+            
+            
             <!-- Konten -->
-        <div class="relative z-20 text-center">
-            <h1 class="text-white font-bold text-lg md:text-2xl" data-aos="fade-up">WE LAUGH, WE BREAK, WE REMEMBER 
-            <span class="text-secondary">XII.COOMFSTWO</span>
-            </h1>
-            <div class="flex gap-3 mt-4 justify-center  ">
-                <div class="btn-home1 btn-primary hover:scale-105 transition-transform duration-300">
-                    <a href="#walikelas" class="md:text-lg z-30">Wali Kelas</a>
+            <div class="relative z-20 text-center">
+                <h1 class="text-white font-bold text-lg md:text-2xl" data-aos="fade-up">WE LAUGH, WE BREAK, WE REMEMBER 
+                    <span class="text-secondary">XII.COOMFSTWO</span>
+                </h1>
+                <div class="flex gap-3 mt-4 justify-center  ">
+                    <div class="btn-home1 btn-primary hover:scale-105 transition-transform duration-300">
+                        <a href="#walikelas" class="md:text-lg z-30">Wali Kelas</a>
+                    </div>
+                    <div class="btn-home2 btn-secondary bg-primary rounded hover:shadow-xl hover:scale-105 hover:border-blue-500 transition-all duration-300">
+                        <a href="#siswa" class="md:text-lg z-30 ">Anak Kelas</a>
+                    </div>
                 </div>
-            <div class="btn-home2 btn-secondary bg-primary rounded hover:shadow-xl hover:scale-105 hover:border-blue-500 transition-all duration-300">
-                <a href="#siswa" class="md:text-lg z-30 ">Anak Kelas</a>
             </div>
-        </div>
-    </div>
-
+            
         </section>
         <!-- Hero End -->
-   <!-- Welcome start -->
-  <section class="container my-12" data-aos="fade-down">
-    <h1 class="title2 text-2xl md:text-4xl" data-aos="fade-down">Welcome To My Class</h1>
-    <p class="font-bold mb-3 text-center text-sm md:text-lg text-slate-600">XII - COOMFSTWO, Kelas 12 - 2 </p>
-    <div class="flex flex-col lg:flex-row items-center justify-center my-12 lg:my-20 w-full">
-        <div class="lg:w-1/2">
-            <img src="src/img/undraw_work-chat_hc3y.svg" alt="team.svg" class="w-full p-2">
-        </div>
-        <div class="lg:w-1/2 lg:ml-40">
-            <p class="text-center text-slate-500 mt-10 md:mt-20 md:text-2xl lg:text-lg lg:text-left" id="walikelas">Kami percaya bahwa kebersamaan ini hanyalah permulaan dari perjalanan yang lebih panjang. Website ini menjadi bukti bahwa persahabatan dan kenangan tidak pernah hilang, bahkan ketika kami melangkah ke arah yang berbeda setelah kelulusan. Semoga setiap kenangan yang tertulis dan tersimpan di sini bisa menjadi pengingat😊, bahwa di balik perjalanan hidup masing-masing, kami pernah menjadi bagian dari satu keluarga besar bernama XII COOMFSTWO.</p>
-        </div>
-    </div>
-  </section>
-   <!-- Welcome end -->
-   <!-- Perkenalan start -->
-    <section id="profil" class="bg-slate-700" data-aos="fade-up">
-
-    
-        <div class="px-5 py-10">
-        <p class="title1 text-xl md:text-3xl" >Profil Kelas</p>
-        <h1 class="title2 text-white text-2xl md:text-4xl">Siapa aja di kelas kami👋</h1>
+        <!-- Welcome start -->
+        <section class="container my-12" data-aos="fade-down">
+            <h1 class="title2 text-2xl md:text-4xl" data-aos="fade-down">Welcome To My Class</h1>
+            <p class="font-bold mb-3 text-center text-sm md:text-lg text-slate-600">XII - COOMFSTWO, Kelas 12 - 2 </p>
+            <div class="flex flex-col lg:flex-row items-center justify-center my-12 lg:my-20 w-full">
+                <div class="lg:w-1/2">
+                    <img src="src/img/undraw_work-chat_hc3y.svg" alt="team.svg" class="w-full p-2">
+                </div>
+                <div class="lg:w-1/2 lg:ml-40">
+                    <p class="text-center text-slate-500 mt-10 md:mt-20 md:text-2xl lg:text-lg lg:text-left" id="walikelas">Kami percaya bahwa kebersamaan ini hanyalah permulaan dari perjalanan yang lebih panjang. Website ini menjadi bukti bahwa persahabatan dan kenangan tidak pernah hilang, bahkan ketika kami melangkah ke arah yang berbeda setelah kelulusan. Semoga setiap kenangan yang tertulis dan tersimpan di sini bisa menjadi pengingat😊, bahwa di balik perjalanan hidup masing-masing, kami pernah menjadi bagian dari satu keluarga besar bernama XII COOMFSTWO.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Welcome end -->
+        <!-- Perkenalan start -->
+        <section id="profil" class="bg-slate-700" data-aos="fade-up">
             
-
-            <div class="lg:flex px-[auto] justify-evenly items-start">
-                <div class="mb-12 mt-24">
-                    <div class="flex flex-col items-center justify-center gap-3" id="walikelas">
-                        <img src="src/img/zaka.jpg" alt="Pak jaka" class="w-32 h-32 md:w-40 md:h-40 p-1 border-2 border-secondary object-cover object-top rounded-[1000px] mb-7" data-aos="zoom-out-down" data-aos-delay="300">
-                        <h1 class="paragraf text-base text-white md:text-xl">Rifani Zakariya S. Pd </h1>
-                        <p class="paragrafdes text-sm text-secondary font-extrabold md:text-lg">GURU PJOK | WALI KELAS</p>
+            
+            <div class="px-5 py-10">
+                <p class="title1 text-xl md:text-3xl" >Profil Kelas</p>
+                <h1 class="title2 text-white text-2xl md:text-4xl">Siapa aja di kelas kami👋</h1>
+                
+                
+                <div class="lg:flex px-[auto] justify-evenly items-start">
+                    <div class="mb-12 mt-24">
+                        <div class="flex flex-col items-center justify-center gap-3" id="walikelas">
+                            <img src="src/img/zaka.jpg" alt="Pak jaka" class="w-32 h-32 md:w-40 md:h-40 p-1 border-2 border-secondary object-cover object-top rounded-[1000px] mb-7" data-aos="zoom-out-down" data-aos-delay="300">
+                            <h1 class="paragraf text-base text-white md:text-xl">Rifani Zakariya S. Pd </h1>
+                            <p class="paragrafdes text-sm text-secondary font-extrabold md:text-lg">GURU PJOK | WALI KELAS</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-32 lg:mb-12 lg:mt-24">
+                        <div class="flex flex-col items-center justify-center gap-3 mb-10 lg:mb-0">
+                            <img src="src/img/abidah.jpg" alt="Abidah" class="w-32 h-32 md:w-40 md:h-40 object-cover border-2 p-1 border-secondary object-top rounded-[1000px] mb-7" data-aos="zoom-out-down" data-aos-delay="300">
+                            <h1 class="paragraf text-base text-white md:text-xl">Abidah Karimata Jaudah</h1>
+                            <p class="paragrafdes text-sm text-secondary md:text-lg" id="siswa">KETUA KELAS</p>
+                            
+                        </div>
                     </div>
                 </div>
                 
-                <div class="mt-32 lg:mb-12 lg:mt-24">
-                    <div class="flex flex-col items-center justify-center gap-3 mb-10 lg:mb-0">
-                        <img src="src/img/abidah.jpg" alt="Abidah" class="w-32 h-32 md:w-40 md:h-40 object-cover border-2 p-1 border-secondary object-top rounded-[1000px] mb-7" data-aos="zoom-out-down" data-aos-delay="300">
-                        <h1 class="paragraf text-base text-white md:text-xl">Abidah Karimata Jaudah</h1>
-                        <p class="paragrafdes text-sm text-secondary md:text-lg" id="siswa">KETUA KELAS</p>
+                
+            </div>
+            <div class="pb-10" data-aos="zoom-in-up" data-aos-delay="200">
+                <p class="paragraf text-base text-white mb-4 md:text-2xl">SISWA XII</p>
+                <p class="text-center text-lg text-secondary md:text-lg">Anggota siswa XII</p>
+                <p class="text-white text-center mb-10 md:text-lg">"Hover dibagian gambarnya👇"</p>
+                <div id="press-slide-container" class="relative w-full h-full overflow-hidden">
+                    
+                    <button id="prev-btn" class="absolute  left-0 top-1/2 h-full  -translate-y-1/2 bg-slate-500 opacity-20 font-extrabold text-2xl text-black rounded-md p-2 z-10 lg:text-6xl">&lt;</button>
+                    <button id="next-btn" class="absolute  -right-1 top-1/2 h-full  -translate-y-1/2 bg-slate-500 opacity-20 font-extrabold text-2xl text-black rounded-md p-2 z-10 lg:text-6xl">&gt;</button>
+                    
+                    <div id="press-slide-track" class="flex h-full ">
+                        
+                        <div class="press-slide-show p-4 px-10 w-full h-full flex-shrink-0 grid grid-cols-2 grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-6 gap-4 place-items-center text-white">
+                            
+                            <div class="relative group flex items-center w-24 h-32 lg:w-32 lg:h-[12rem] shadow-xl">
+                                <img src="src/img/naufal.JPG" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+                                <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="font-bold cursor-pointer text-xl lg:text-2xl">Naufal</p>
+                                
+                            </div>
+                        </div>
+
+                     <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+                         <img src="src/img/Wildan.jpg" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+                         <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+                         opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                         <p class="font-bold cursor-pointer lg:text-2xl text-xl">Wildan</p>
+                         
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+                        <img src="src/img/farrel.JPG" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+                        opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="font-bold cursor-pointer lg:text-2xl text-xl">Farrel</p>
                         
                     </div>
                 </div>
-            </div>
-            
-            
-        </div>
-        <div class="pb-10" data-aos="zoom-in-up" data-aos-delay="200">
-            <p class="paragraf text-base text-white mb-4 md:text-2xl">SISWA XII</p>
-            <p class="text-center text-lg text-secondary md:text-lg">Anggota siswa XII</p>
-            <p class="text-white text-center mb-10 md:text-lg">"Hover dibagian gambarnya👇"</p>
-            <div id="press-slide-container" class="relative w-full h-full overflow-hidden">
-
-            <button id="prev-btn" class="absolute  left-0 top-1/2 h-full  -translate-y-1/2 bg-slate-500 opacity-20 font-extrabold text-2xl text-black rounded-md p-2 z-10 lg:text-6xl">&lt;</button>
-            <button id="next-btn" class="absolute  -right-1 top-1/2 h-full  -translate-y-1/2 bg-slate-500 opacity-20 font-extrabold text-2xl text-black rounded-md p-2 z-10 lg:text-6xl">&gt;</button>
-
-            <div id="press-slide-track" class="flex h-full ">
-
-                <div class="press-slide-show p-4 px-10 w-full h-full flex-shrink-0 grid grid-cols-2 grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-6 gap-4 place-items-center text-white">
+                
+                
+                <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+                    <img src="src/img/nadia.JPG" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <p class="font-bold cursor-pointer lg:text-2xl text-xl">Nadia</p>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+                            <img src="src/img/Azril.webp" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+                            opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="font-bold cursor-pointer lg:text-2xl text-xl">Azril</p>
+                            
+                        </div>
+                    </div>
                     
-                     <div class="relative group flex items-center w-24 h-32 lg:w-32 lg:h-[12rem] shadow-xl">
-                        <img src="src/img/naufal.JPG" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="font-bold cursor-pointer text-xl lg:text-2xl">Naufal</p>
-
-                    </div>
-                </div>
-
-                     <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
-                        <img src="src/img/Wildan.jpg" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="font-bold cursor-pointer lg:text-2xl text-xl">Wildan</p>
-
-                    </div>
-                </div>
-
-                     
-                     <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
-                        <img src="src/img/farrel.JPG" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="font-bold cursor-pointer lg:text-2xl text-xl">Farrel</p>
-
-                    </div>
-                </div>
-
-
-                    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
-                        <img src="src/img/nadia.JPG" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="font-bold cursor-pointer lg:text-2xl text-xl">Nadia</p>
-
-                    </div>
-                </div>
-
-                 <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
-                        <img src="src/img/Azril.webp" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="font-bold cursor-pointer lg:text-2xl text-xl">Azril</p>
-
-                    </div>
-                </div>
-
-
+                    
                     <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
                         <img src="src/img/salwa.jpg" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+                        opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="font-bold cursor-pointer lg:text-2xl text-xl">Salwa</p>
-
+                        
                     </div>
                 </div>
-
-
-                </div>
-
-                <div class="press-slide-show p-4 px-10 w-full h-full flex-shrink-0 grid grid-cols-2 grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-6  gap-4 place-items-center text-white">
-                    
-                    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+                
+                
+            </div>
+            
+            <div class="press-slide-show p-4 px-10 w-full h-full flex-shrink-0 grid grid-cols-2 grid-rows-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-6  gap-4 place-items-center text-white">
+                
+                <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
                         <img src="src/img/nopi.jpg" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
                         <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold cursor-pointer lg:text-2xl text-xl">Novi</p>
-
-                        </div>
+                        opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="font-bold cursor-pointer lg:text-2xl text-xl">Novi</p>
+                        
                     </div>
-
-                    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
-                        <img src="src/img/Nilta.jpg" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold cursor-pointer lg:text-2xl text-xl">Nilta</p>
-
-                        </div>
-                    </div>
-
-                    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
-                        <img src="src/img/lailatul.jpg" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold cursor-pointer lg:text-2xl text-xl">Lailatul</p>
-
-                        </div>
-                    </div>
-
-                    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
-                        <img src="src/img/putri.JPG" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold cursor-pointer lg:text-2xl text-xl">Putri</p>
-
-                        </div>
-                    </div>
-
-                    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
-                        <img src="src/img/rahayu.jpg" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold text-xl lg:text-2xl">Rahayu</p>
-                            
-
-                        </div>
-                    </div>
-
-                    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
-                        <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold cursor-pointer text-xs lg:text-2xl">Alfit</p>
-                        </div>
-                    </div>
-
-
-
                 </div>
-
-                <div class="press-slide-show p-4 px-10 w-full h-full flex-shrink-0 grid grid-cols-2 grid-rows-2 gap-4 place-items-center text-white">
-                    
-                    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
-                        <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold cursor-pointer text-xs lg:text-2xl">Silvi</p>
-                            
-
-                        </div>
-                    </div>
-
-                    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
-                        <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold cursor-pointer text-xs lg:text-2xl">Amel</p>
-                            
-
-                        </div>
-                    </div>
-
-                    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
-                        <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold cursor-pointer text-xs lg:text-2xl">Agung </p>
-                            
-
-                        </div>
-                    </div>
-
-                    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
-                        <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
-                        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p class="font-bold cursor-pointer text-xs lg:text-2xl">Andre</p>
-                            
-
-                        </div>
-                    </div>
-
+                
+                <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+                    <img src="src/img/Nilta.jpg" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p class="font-bold cursor-pointer lg:text-2xl text-xl">Nilta</p>
                     
                 </div>
-
             </div>
-
+            
+            <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+                <img src="src/img/lailatul.jpg" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+                <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p class="font-bold cursor-pointer lg:text-2xl text-xl">Lailatul</p>
+                
+            </div>
         </div>
+        
+        <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+            <img src="src/img/putri.JPG" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+            <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+            opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p class="font-bold cursor-pointer lg:text-2xl text-xl">Putri</p>
+            
         </div>
+    </div>
     
+    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+        <img src="src/img/rahayu.jpg" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+        opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <p class="font-bold text-xl lg:text-2xl">Rahayu</p>
+        
+        
+    </div>
+</div>
 
-  </section>
-   <!-- Perkenalan end -->
-  <!-- Tentang Start-->
-  <section id="tentangkami" class="container bg-white pt-24" >
+<div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+    <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+    opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <p class="font-bold cursor-pointer text-xs lg:text-2xl">Alfit</p>
+</div>
+</div>
+
+
+
+</div>
+
+<div class="press-slide-show p-4 px-10 w-full h-full flex-shrink-0 grid grid-cols-2 grid-rows-2 gap-4 place-items-center text-white">
+    
+    <div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+        <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+        <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+        opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <p class="font-bold cursor-pointer text-xs lg:text-2xl">Silvi</p>
+        
+        
+    </div>
+</div>
+
+<div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+    <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+    opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <p class="font-bold cursor-pointer text-xs lg:text-2xl">Amel</p>
+    
+    
+</div>
+</div>
+
+<div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+    <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+    opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <p class="font-bold cursor-pointer text-xs lg:text-2xl">Agung </p>
+    
+    
+</div>
+</div>
+
+<div class="relative group flex items-center w-24 h-32 shadow-xl lg:w-32 lg:h-[12rem]">
+    <img src="src/img/user.png" class="rounded-md  shadow-xl w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-110 group-hover:brightness-60 saturate-0 group-hover:saturate-100">
+    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white 
+    opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <p class="font-bold cursor-pointer text-xs lg:text-2xl">Andre</p>
+    
+    
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+</section>
+<!-- Perkenalan end -->
+<!-- Tentang Start-->
+<section id="tentangkami" class="container bg-white pt-24" >
     <div class="bg-white py-5" data-aos="fade-down" data-aos-delay="500">
-          <p class="title1 text-black text-xl">TENTANG KAMI</p>
-          <h1 class="title2 text-2xl">Fakta di kelas kami ?</h1>
-          <p class="titledescription text-slate-400">Kamu paling tidak tau sifat kami di kelas, tapi kalian bisa tau apa saja sifat kami bila dikumplakna dalam satu kelas</p>
-          <p class="text-center"><a href="#" class="text-secondary font-normal">“XII COOMFSTWO</a> bukan cuma kelas biasa. Kami adalah kombinasi antara chaos, canda tawa, dan perjuangan bareng-bareng ngelawan tugas. Satu tahun, sejuta cerita.”</p>
-          <h1 class="text-center font-semibold text-lg md:text-3xl lg:text-secondary lg:mt-20    md:mb-10 mb-4">FAKTA KELAS KAMI</h1>
-          
-          <div class="lg:flex lg:flex-row lg:justify-around lg:items-center lg:gap-7">
-              <div class="my-10 flex justify-center">
-                  <img src="src/img/undraw_project-team_dip6.svg" alt="">
-                </div>
-                <div>
-                    <ul class="list-disc ml-5 lg:ml-0 space-y-2 md:text-xl lg:text-lg text-slate-500">
-                        <li>Kami suka kalau ada tugas yang membutuhkan hp karena nanti bisa ambil hp di kantor</li>
-                        <li>Kelas kami damai kalau semua tidur</li>
-                        <li>Kelas kami ada wifi tapi punya kelas lain hehe</li>
-                  <li>Kami suka kalau ada tugas berkelompok</li>
-                  <li>Paling enak kalau tugas ngerjakannya di luar sekolah</li>
-                  <li>Murid di kelas kami enaknya sama guru yang santai</li>
+        <p class="title1 text-black text-xl">TENTANG KAMI</p>
+        <h1 class="title2 text-2xl">Fakta di kelas kami ?</h1>
+        <p class="titledescription text-slate-400">Kamu paling tidak tau sifat kami di kelas, tapi kalian bisa tau apa saja sifat kami bila dikumplakna dalam satu kelas</p>
+        <p class="text-center"><a href="#" class="text-secondary font-normal">“XII COOMFSTWO</a> bukan cuma kelas biasa. Kami adalah kombinasi antara chaos, canda tawa, dan perjuangan bareng-bareng ngelawan tugas. Satu tahun, sejuta cerita.”</p>
+        <h1 class="text-center font-semibold text-lg md:text-3xl lg:text-secondary lg:mt-20    md:mb-10 mb-4">FAKTA KELAS KAMI</h1>
+        
+        <div class="lg:flex lg:flex-row lg:justify-around lg:items-center lg:gap-7">
+            <div class="my-10 flex justify-center">
+                <img src="src/img/undraw_project-team_dip6.svg" alt="">
+            </div>
+            <div>
+                <ul class="list-disc ml-5 lg:ml-0 space-y-2 md:text-xl lg:text-lg text-slate-500">
+                    <li>Kami suka kalau ada tugas yang membutuhkan hp karena nanti bisa ambil hp di kantor</li>
+                    <li>Kelas kami damai kalau semua tidur</li>
+                    <li>Kelas kami ada wifi tapi punya kelas lain hehe</li>
+                    <li>Kami suka kalau ada tugas berkelompok</li>
+                    <li>Paling enak kalau tugas ngerjakannya di luar sekolah</li>
+                    <li>Murid di kelas kami enaknya sama guru yang santai</li>
                   <li>Kami kalau ada masalah semuanya ikut nyelesaiin</li>
                   <li>Kami paling malas kalau ada tugas yang harus dikumpulkan secepatnya</li>
                   <li>Kelas paling rame kalau jam kosong, tapi paling sepi kalau ada tugas numpuk.</li>
@@ -368,101 +371,101 @@
             </div>
         </div>
     </div>
-    </section>
-    <!-- Tentang End -->
-    <section id="galeri" class=" mt-52 pt-32 bg-secondary">
-        <p class="text-center text-slate-700 font-extrabold">HIGHLIGHT MOMENT</p>
-        <h1 class="title2 text-2xl">Banyak momen disini</h1>
-        <p class="titledescription px-10">Disini kamu bisa melihat suasana di kelas kami dan kamu bisa melihat peristiwa yang ada di kelas kami, Coba di klik untuk keluar captionnya</p>
-        <div class="overflow-hidden">
+</section>
+<!-- Tentang End -->
+<section id="galeri" class=" mt-52 pt-32 bg-secondary">
+    <p class="text-center text-slate-700 font-extrabold">HIGHLIGHT MOMENT</p>
+    <h1 class="title2 text-2xl">Banyak momen disini</h1>
+    <p class="titledescription px-10">Disini kamu bisa melihat suasana di kelas kami dan kamu bisa melihat peristiwa yang ada di kelas kami, Coba di klik untuk keluar captionnya</p>
+    <div class="overflow-hidden">
+        
+        <div id="slider-container" class="w-[200rem] relative py-16 cursor-pointer">
             
-            <div id="slider-container" class="w-[200rem] relative py-16 cursor-pointer">
+            <div id="slider-track" class="flex w-full">
                 
-                <div id="slider-track" class="flex w-full">
-                    
-                    <div class="slide p-4 relative group flex items-center w-[100rem]">
-                        <img src="src/img/1 (1).jpg" class="rounded-lg shadow-xl w-[] object-fill object-center transition-all duration-500 group-hover:brightness-50">
+                <div class="slide p-4 relative group flex items-center w-[100rem]">
+                    <img src="src/img/1 (1).jpg" class="rounded-lg shadow-xl w-[] object-fill object-center transition-all duration-500 group-hover:brightness-50">
                     <div class="absolute inset-0 flex items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="font-bold text-xl">Foto Bersama <br> Osis Tahun 2023</p>
-                    </div>
+                    opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p class="font-bold text-xl">Foto Bersama <br> Osis Tahun 2023</p>
                 </div>
-
-               
-                    <div class="slide p-4 relative group flex items-center w-[100rem]">
-                        <img src="src/img/1 (1).png" class="rounded-lg shadow-xl w-[] object-fill object-center transition-all duration-500 group-hover:brightness-50">
-                    <div class="absolute inset-0 flex items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="font-bold text-xl">Foto Bersama <br> P-5 2024</p>
-                    </div>
-                </div>
-
-               
-                    <div class="slide p-4 relative group flex items-center w-[100rem]">
-                        <img src="src/img/1 (3).jpg" class="rounded-lg shadow-xl w-[] object-fill object-center transition-all duration-500 group-hover:brightness-50">
-                    <div class="absolute inset-0 flex items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="font-bold text-xl">SmawaJournalist Team II <br> Tahun 2024</p>
-                    </div>
-                </div>
-
-               
-                    <div class="slide p-4 relative group flex items-center w-[100rem]">
-                        <img src="src/img/1 (10).jpg" class="rounded-lg shadow-xl w-[] object-fill object-center transition-all duration-500 group-hover:brightness-50">
-                    <div class="absolute inset-0 flex items-center justify-center p-4 text-center text-white 
-                                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="font-bold text-xl">Kunjungan Yakult <br> tahun 2025</p>
-                    </div>
-                </div>
-
-               
-                
+            </div>
+            
+            
+            <div class="slide p-4 relative group flex items-center w-[100rem]">
+                <img src="src/img/1 (1).png" class="rounded-lg shadow-xl w-[] object-fill object-center transition-all duration-500 group-hover:brightness-50">
+                <div class="absolute inset-0 flex items-center justify-center p-4 text-center text-white 
+                opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p class="font-bold text-xl">Foto Bersama <br> P-5 2024</p>
             </div>
         </div>
-  </section>
+        
+        
+        <div class="slide p-4 relative group flex items-center w-[100rem]">
+            <img src="src/img/1 (3).jpg" class="rounded-lg shadow-xl w-[] object-fill object-center transition-all duration-500 group-hover:brightness-50">
+            <div class="absolute inset-0 flex items-center justify-center p-4 text-center text-white 
+            opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p class="font-bold text-xl">SmawaJournalist Team II <br> Tahun 2024</p>
+        </div>
+    </div>
+
+    
+    <div class="slide p-4 relative group flex items-center w-[100rem]">
+        <img src="src/img/1 (10).jpg" class="rounded-lg shadow-xl w-[] object-fill object-center transition-all duration-500 group-hover:brightness-50">
+        <div class="absolute inset-0 flex items-center justify-center p-4 text-center text-white 
+        opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <p class="font-bold text-xl">Kunjungan Yakult <br> tahun 2025</p>
+    </div>
+</div>
+
+
+
+</div>
+</div>
+</section>
 
 <!-- Jadwal pelajaran dan motivasi -->
 <!--Jadwal pelajaran dan motivasi End -->
 <!-- Countdown waktu kelulusan -->
- <section id="countdown" class="pt-24 mt-16">
+<section id="countdown" class="pt-24 mt-16">
     <div class="flex px-5 justify-center" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
-
-   <div class="text-center">
-        <h1 class="text-3xl md:text-5xl font-bold mb-2">Hitung Mundur ke lulusan</h1>
-        <p class="text-lg text-gray-800 mb-8 md:text-2xl">Sisa Waktu:</p>
         
-        <div id="countdown" class="grid grid-cols-4 gap-4 md:gap-8 max-w-2xl mx-auto">
-            <div class="bg-gray-800 p-4 px-2 md:p-6 rounded-lg flex flex-col justify-center">
-                <div id="days" class="text-4xl md:text-6xl font-bold text-white">0</div>
-                <div class="text-sm md:text-xl text-white">Hari</div>
+        <div class="text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-2">Hitung Mundur ke lulusan</h1>
+            <p class="text-lg text-gray-800 mb-8 md:text-2xl">Sisa Waktu:</p>
+            
+            <div id="countdown" class="grid grid-cols-4 gap-4 md:gap-8 max-w-2xl mx-auto">
+                <div class="bg-gray-800 p-4 px-2 md:p-6 rounded-lg flex flex-col justify-center">
+                    <div id="days" class="text-4xl md:text-6xl font-bold text-white">0</div>
+                    <div class="text-sm md:text-xl text-white">Hari</div>
+                </div>
+                <div class="bg-gray-800 p-4 md:p-6 rounded-lg">
+                    <div id="hours" class="text-4xl md:text-6xl font-bold text-white">0</div>
+                    <div class="text-sm md:text-xl text-white">Jam</div>
+                </div>
+                <div class="bg-gray-800 p-4 md:p-6 rounded-lg">
+                    <div id="minutes" class="text-4xl md:text-6xl font-bold text-white">0</div>
+                    <div class="text-sm md:text-xl text-white">Menit</div>
+                </div>
+                <div class="bg-gray-800 p-4 md:p-6 rounded-lg">
+                    <div id="seconds" class="text-4xl md:text-6xl font-bold text-white">0</div>
+                    <div class="text-sm md:text-xl text-white">Detik</div>
+                </div>
             </div>
-            <div class="bg-gray-800 p-4 md:p-6 rounded-lg">
-                <div id="hours" class="text-4xl md:text-6xl font-bold text-white">0</div>
-                <div class="text-sm md:text-xl text-white">Jam</div>
-            </div>
-            <div class="bg-gray-800 p-4 md:p-6 rounded-lg">
-                <div id="minutes" class="text-4xl md:text-6xl font-bold text-white">0</div>
-                <div class="text-sm md:text-xl text-white">Menit</div>
-            </div>
-            <div class="bg-gray-800 p-4 md:p-6 rounded-lg">
-                <div id="seconds" class="text-4xl md:text-6xl font-bold text-white">0</div>
-                <div class="text-sm md:text-xl text-white">Detik</div>
+            
+            <div id="message" class="hidden mt-8 text-3xl font-bold text-green-400">
+                Waktunya telah tiba!
             </div>
         </div>
-
-        <div id="message" class="hidden mt-8 text-3xl font-bold text-green-400">
-            Waktunya telah tiba!
-        </div>
     </div>
-    </div>
- </section>
-    <!-- Instagram -->
-     <section id="instagram">
-
-     </section>
+</section>
+<!-- Instagram -->
+<section id="instagram">
+    
+</section>
 
 <!-- Lokasi -->
- <section id="lokasi" class="px-5 py-10 my-52" data-aos="fade-up" data-aos-anchor-placement="">
+<section id="lokasi" class="px-5 py-10 my-52" data-aos="fade-up" data-aos-anchor-placement="">
     <div class="flex-col justify-center ">
         <h1 class="title2 text-2xl mb-10">Lokasi Kita</h1>
         
@@ -476,91 +479,92 @@
                 <div class=" flex justify-start w-full mt-10">    
                     <a href="https://www.google.com/maps/place/SMA+Wahidiyah+Kepanjen/@-8.1343524,112.5732572,17z/data=!3m1!4b1!4m6!3m5!1s0x2e789fa922a3cda5:0x3b9d2dd64154e963!8m2!3d-8.1343524!4d112.5758321!16s%2Fg%2F11bzyj_41v?entry=tts&g_ep=EgoyMDI1MDgxNy4wIPu8ASoASAFQAw%3D%3D&skid=098a22ee-79cf-460e-bd33-190b4fa86f8a" target="_blank" class="btn-primary hover:scale-105 text-xl">Location</a>
                 </div>
-                </div>
+            </div>
         </div>
     </div>
- </section>
+</section>
 
-    <!-- Foto -->
-    
+<!-- Foto -->
 
-    <section class="dev p-3" data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" >
-        <div class="lg:flex lg:justify-center">
+
+<section class="dev p-3" data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom" >
+    <div class="lg:flex lg:justify-center">
+        
+        <div class="py-5 flex flex-col justify-center border-2 border-slate-400 rounded-lg shadow-xl lg:w-1/2 lg:h-1/2">
+            <div class="flex justify-center" data-aos="zoom-in-down" data-aos-delay="500" data-aos-anchor-placement="top-center">
+                <img src="src/img/naufal2.jpg" alt="" class="w-32 h-32 md:w-40 md:h-40 object-cover object-left-bottom rounded-full shadow-xl">        
+            </div>
             
-            <div class="py-5 flex flex-col justify-center border-2 border-slate-400 rounded-lg shadow-xl lg:w-1/2 lg:h-1/2">
-                <div class="flex justify-center" data-aos="zoom-in-down" data-aos-delay="500" data-aos-anchor-placement="top-center">
-                    <img src="src/img/naufal2.jpg" alt="" class="w-32 h-32 md:w-40 md:h-40 object-cover object-left-bottom rounded-full shadow-xl">        
+            <div class="px-2 mt-10">
+                <p class="text-center leading-relaxed md:text-xl md:leading-10 md:px-10"><span class="font-bold text-slate-500"> Salam hangat dari saya, Muhamad Naufal Kuswandana.</span> Terima kasih sudah meluangkan waktu untuk berkunjung ke website kelas kami. Ingatlah, sekolah bukan sekadar ruang belajar, tapi juga tempat kita menyiapkan diri untuk masa depan. Sampai jumpa di web selanjutnya.</p>
+                <p class="text-green-500 font-bold text text-center py-10 md:text-3xl">Front End Devoloper⚙️</p>
+                <div class="flex justify-center">
+                    <p>Link🔗</p>
                 </div>
                 
-                <div class="px-2 mt-10">
-                    <p class="text-center leading-relaxed md:text-xl md:leading-10 md:px-10"><span class="font-bold text-slate-500"> Salam hangat dari saya, Muhamad Naufal Kuswandana.</span> Terima kasih sudah meluangkan waktu untuk berkunjung ke website kelas kami. Ingatlah, sekolah bukan sekadar ruang belajar, tapi juga tempat kita menyiapkan diri untuk masa depan. Sampai jumpa di web selanjutnya.</p>
-                    <p class="text-green-500 font-bold text text-center py-10 md:text-3xl">Front End Devoloper⚙️</p>
-                    <div class="flex justify-center">
-                        <p>Link🔗</p>
-                    </div>
+                
+            </div>
+            <div class="flex justify-center gap-4 mt-10">
+                <div class="w-12 md:w-16  border-2 border-slate-700 p-3 rounded-full hover:bg-secondary group">
                     
+                    <a href="https://www.instagram.com/nuxztech/" class="" target="_blank"><svg role="img" class="fill-secondary w-full group-hover:fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
+                </div>
+                <div class="w-12 md:w-16  border-2 border-slate-700 p-3 rounded-full hover:bg-secondary group">
                     
+                    <a href="https://www.tiktok.com/@bluespurny?is_from_webapp=1&sender_device=pc" class="" target="_blank"><svg role="img" class="fill-secondary w-full group-hover:fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
                 </div>
-                <div class="flex justify-center gap-4 mt-10">
-                    <div class="w-12 md:w-16  border-2 border-slate-700 p-3 rounded-full hover:bg-secondary group">
-
-                        <a href="https://www.instagram.com/nuxztech/" class="" target="_blank"><svg role="img" class="fill-secondary w-full group-hover:fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
-                    </div>
-                    <div class="w-12 md:w-16  border-2 border-slate-700 p-3 rounded-full hover:bg-secondary group">
-
-                        <a href="https://www.tiktok.com/@bluespurny?is_from_webapp=1&sender_device=pc" class="" target="_blank"><svg role="img" class="fill-secondary w-full group-hover:fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
-                    </div>
-                    <div class="w-12 md:w-16  border-2 border-slate-700 p-3 rounded-full hover:bg-secondary group">
-
-                        <a href="https://www.linkedin.com/in/muhamad-naufal-kuswandana-1bb622362/?trk=public-profile-join-page" class="" target="_blank"><svg role="img" viewBox="0 0 24 24" class="fill-secondary w-full group-hover:fill-white" xmlns="http://www.w3.org/2000/svg"><title>Linkerd</title><path d="M22.329 5.04v9.034l1.666.964V6.004l-1.666-.964ZM0 15.038l1.666-.964V5.04L0 6.004v9.034Zm8.165-.089 7.665 4.424V17.45l-7.176-4.142-.489.282v1.359Zm8.105 6.989-8.105-4.681v1.923l2.164 1.25-2.604 1.503a.263.263 0 0 0 0 .454l1.27.737 3-1.73 3 1.73 1.27-.737c.178-.093.178-.35.005-.449Zm6.059-11.511v8.012c0 .202.218.331.396.227l1.142-.657a.267.267 0 0 0 .133-.228V9.468l-1.671.959Zm-3.271 10.354 1.072-.623a.39.39 0 0 0 .198-.341v-8.233l-1.666.963v8.012c0 .198.218.326.396.222Zm-4.063 2.348 1.537-.885a.265.265 0 0 0 .134-.227v-8.318l-1.671.964v8.466Zm-7.532-.89L9 23.124v-8.461l-1.666-.964v8.313c0 .094.05.183.129.227Zm-3.598-2.076 1.072.623a.265.265 0 0 0 .396-.227v-8.017l-1.666-.963v8.238c0 .144.074.277.198.346ZM.198 18.048l1.072.623a.265.265 0 0 0 .396-.228v-8.016L0 9.468v8.239c0 .138.074.267.198.341ZM23.995 6.004l-1.666-.964-3 1.73-1.996-1.152 2.604-1.502a.264.264 0 0 0 0-.455l-1.077-.623a.403.403 0 0 0-.395 0l-2.803 1.616-1.996-1.151L16.27 2a.263.263 0 0 0 0-.454L15.193.923a.405.405 0 0 0-.396 0l-2.802 1.616L9.193.923a.405.405 0 0 0-.396 0l-1.077.623a.263.263 0 0 0 0 .454l14.6 8.432 1.665-.964-3-1.73 3.01-1.734ZM5.135 3.038l-1.072.623a.264.264 0 0 0 0 .455l14.599 8.431 1.666-.963L5.53 3.038a.403.403 0 0 0-.395 0ZM0 6.004l3 1.729-3 1.735 1.671.959 2.995-1.73 2.001 1.157-3 1.73 1.666.963 3-1.734 1.996 1.156-3 1.73L9 14.663l2.995-1.735 3 1.735 1.666-.964L1.666 5.04 0 6.004Z"/></svg></a>
-                    </div>
-
-
+                <div class="w-12 md:w-16  border-2 border-slate-700 p-3 rounded-full hover:bg-secondary group">
+                    
+                    <a href="https://www.linkedin.com/in/muhamad-naufal-kuswandana-1bb622362/?trk=public-profile-join-page" class="" target="_blank"><svg role="img" viewBox="0 0 24 24" class="fill-secondary w-full group-hover:fill-white" xmlns="http://www.w3.org/2000/svg"><title>Linkerd</title><path d="M22.329 5.04v9.034l1.666.964V6.004l-1.666-.964ZM0 15.038l1.666-.964V5.04L0 6.004v9.034Zm8.165-.089 7.665 4.424V17.45l-7.176-4.142-.489.282v1.359Zm8.105 6.989-8.105-4.681v1.923l2.164 1.25-2.604 1.503a.263.263 0 0 0 0 .454l1.27.737 3-1.73 3 1.73 1.27-.737c.178-.093.178-.35.005-.449Zm6.059-11.511v8.012c0 .202.218.331.396.227l1.142-.657a.267.267 0 0 0 .133-.228V9.468l-1.671.959Zm-3.271 10.354 1.072-.623a.39.39 0 0 0 .198-.341v-8.233l-1.666.963v8.012c0 .198.218.326.396.222Zm-4.063 2.348 1.537-.885a.265.265 0 0 0 .134-.227v-8.318l-1.671.964v8.466Zm-7.532-.89L9 23.124v-8.461l-1.666-.964v8.313c0 .094.05.183.129.227Zm-3.598-2.076 1.072.623a.265.265 0 0 0 .396-.227v-8.017l-1.666-.963v8.238c0 .144.074.277.198.346ZM.198 18.048l1.072.623a.265.265 0 0 0 .396-.228v-8.016L0 9.468v8.239c0 .138.074.267.198.341ZM23.995 6.004l-1.666-.964-3 1.73-1.996-1.152 2.604-1.502a.264.264 0 0 0 0-.455l-1.077-.623a.403.403 0 0 0-.395 0l-2.803 1.616-1.996-1.151L16.27 2a.263.263 0 0 0 0-.454L15.193.923a.405.405 0 0 0-.396 0l-2.802 1.616L9.193.923a.405.405 0 0 0-.396 0l-1.077.623a.263.263 0 0 0 0 .454l14.6 8.432 1.665-.964-3-1.73 3.01-1.734ZM5.135 3.038l-1.072.623a.264.264 0 0 0 0 .455l14.599 8.431 1.666-.963L5.53 3.038a.403.403 0 0 0-.395 0ZM0 6.004l3 1.729-3 1.735 1.671.959 2.995-1.73 2.001 1.157-3 1.73 1.666.963 3-1.734 1.996 1.156-3 1.73L9 14.663l2.995-1.735 3 1.735 1.666-.964L1.666 5.04 0 6.004Z"/></svg></a>
                 </div>
+                
+                
             </div>
         </div>
+    </div>
+    
+</section>
 
-    </section>
-
-    <footer class="mt-52 bg-secondary">
-        <!-- 1 2 3  -->
-         <!-- 1 2 3 -->
-        <div class="px-4 py-16 flex flex-col lg:flex-row lg:justify-evenly gap-3 mb-12">
-
-            <h1 class="font-bold text-2xl mb-6">XII - COOMFSTWO</h1>
-
-            <div>
-                <h1 class="text-lg font-bold mb-3">TAUTAN🔗</h1>
-                <nav>
-                    <ul class="flex flex-col gap-3">
-                        <li><a href="#home" class="hover:text-white">Home</a></li>
-                        <li><a href="#profil" class="hover:text-white">Profil</a></li>
-                        <li><a href="#galeri" class="hover:text-white">Galeri</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <div class="h-20 mb-24">
-                <h1 class="text-lg font-bold mb-3">NUXZ TECH👋</h1>
-                <div class="flex flex-col gap-3">
-                    <a href="https://www.instagram.com/nuxztech/" target="_blank" class="hover:text-white">Instagram</a>
-                    <a href="https://www.tiktok.com/@bluespurny?is_from_webapp=1&sender_device=pc" target="_blank" class="hover:text-white">Tiktok</a>
-                    <a href="https://www.linkedin.com/in/muhamad-naufal-kuswandana-1bb622362/?trk=public-profile-join-page" target="_blank" class="hover:text-white">Linkedin</a>
-                    <a href="https://wa.me/6285807107865?text=Aku%20ingin%20membeli%20apk%20prem%20Nama apk>%20Ready" target="_blank" class="hover:text-white">WhatsApp</a>
-                </div>
-            </div>
-            
-            <div>
-                <h1 class="text-lg font-bold mb-3">MEDIA SOSIAL📢</h1>
-                <ul>
-                    <li class="hover:text-white"><a href="https://www.instagram.com/xii.coomfstwo/" target="_blank">Instagram</a></li>
+<footer class="mt-52 bg-secondary">
+    <!-- 1 2 3  -->
+    <!-- 1 2 3 -->
+    <div class="px-4 py-16 flex flex-col lg:flex-row lg:justify-evenly gap-3 mb-12">
+        
+        <h1 class="font-bold text-2xl mb-6">XII - COOMFSTWO</h1>
+        
+        <div>
+            <h1 class="text-lg font-bold mb-3">TAUTAN🔗</h1>
+            <nav>
+                <ul class="flex flex-col gap-3">
+                    <li><a href="#home" class="hover:text-white">Home</a></li>
+                    <li><a href="#profil" class="hover:text-white">Profil</a></li>
+                    <li><a href="#galeri" class="hover:text-white">Galeri</a></li>
                 </ul>
+            </nav>
+        </div>
+        
+        <div class="h-20 mb-24">
+            <h1 class="text-lg font-bold mb-3">NUXZ TECH👋</h1>
+            <div class="flex flex-col gap-3">
+                <a href="https://www.instagram.com/nuxztech/" target="_blank" class="hover:text-white">Instagram</a>
+                <a href="https://www.tiktok.com/@bluespurny?is_from_webapp=1&sender_device=pc" target="_blank" class="hover:text-white">Tiktok</a>
+                <a href="https://www.linkedin.com/in/muhamad-naufal-kuswandana-1bb622362/?trk=public-profile-join-page" target="_blank" class="hover:text-white">Linkedin</a>
+                <a href="https://wa.me/6285807107865?text=Aku%20ingin%20membeli%20apk%20prem%20Nama apk>%20Ready" target="_blank" class="hover:text-white">WhatsApp</a>
             </div>
-
-            <hr class="border-2">
-        </div>  
-        <h1 class="text-center">Dibuat dengan ❤️ Oleh <span class="text-primary">Naufal Kuswandana</span>, menggunakan Tailwind CSS</h1>
-        <hr class="mt-20">
-    </footer>
+        </div>
+        
+        <div>
+            <h1 class="text-lg font-bold mb-3">MEDIA SOSIAL📢</h1>
+            <ul>
+                <li class="hover:text-white"><a href="https://www.instagram.com/xii.coomfstwo/" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+        
+        <hr class="border-2">
+    </div>  
+    <h1 class="text-center">Dibuat dengan ❤️ Oleh <span class="text-primary">Naufal Kuswandana</span>, menggunakan Tailwind CSS</h1>
+    <hr class="mt-20">
+</footer>
+</div>
 </body>
 </html>
