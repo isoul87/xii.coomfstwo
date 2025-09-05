@@ -1,27 +1,60 @@
 // Navbar Fixed 
-      const loaderElement = document.getElementById('loader');
-      const mainContentElement = document.getElementById('main-content');
 
-      window.addEventListener('load', function() {
+window.addEventListener('load', function() {
+        const loaderElement = document.getElementById('loader');
+        const mainContentElement = document.getElementById('main-content');
         setTimeout(() => {
-          loaderElement.classList.add('hidden'); // Sembunyikan loader
-          mainContentElement.classList.remove('hidden'); // Tampilkan konten
+          if (loaderElement) loaderElement.classList.add('hidden');
+                if (mainContentElement) {
+                    mainContentElement.classList.remove('invisible');           
+                }
       gsap.from("#main-content", {
-      opacity: 0,
-      y: 40, // muncul dari bawah
-      duration: 1.2,
-      ease: "power3.out"
+        opacity: 0,
+        y: 50,
+        duration: 1.2,
+        ease: "power3.out",
     });
-
-
+      gsap.to("#header", {
+        opacity: 1,
+        duration: 1.2,
+        delay: 2,
+        ease: "power3.out",
+    });
         }, 2000)
+  });
+    
+  // function setupNavbarFixed() {
+  //     console.log("FUNGSI SETUPNAVBARFIXED BERJALAN!"); 
+  //     const header = document.querySelector('#header');
+  //     const toTop = document.querySelector('#toTop');
+      
+  //     if (!header) return;
+  
+  //     // Hitung posisi header SETELAH semua konten terlihat
+  //     const fixedNav = header.offsetTop;
+  
+  //     function checkNav() {
+  //       console.log("Posisi scroll (pageYOffset):", window.pageYOffset);
+  //         if (window.pageYOffset > fixedNav) {
+  //             header.classList.add('navbar-fixed');
+  //             if (toTop) {
+  //                 toTop.classList.remove('hidden');
+  //                 toTop.classList.add('flex');
+  //             }
+  //         } else {
+  //             header.classList.remove('navbar-fixed');
+  //             if (toTop) {
+  //                 toTop.classList.remove('flex');
+  //                 toTop.classList.add('hidden');
+  //             }
+  //         }
+  //     }
+  
+  //     window.addEventListener("scroll", checkNav);
+  //     checkNav(); // Cek sekali saat pertama kali
+  // };
 
-        
-        
-      });
-    AOS.init();
-
-self.addEventListener("install", (event) => {
+  self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open("coomfstwo-cache").then((cache) => {
       return cache.addAll([
@@ -43,27 +76,15 @@ self.addEventListener("fetch", (event) => {
   );
 });
 
+
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/dist/script.js")
+    navigator.serviceWorker.register("dist/script.js")
 }
 
+
 document.addEventListener("DOMContentLoaded", function() {
-    window.onscroll = function () {
-    const header = document.querySelector('header');
-    const fixedNav = header.offsetTop;
-    const toTop = document.querySelector('#toTop')
+  AOS.init();
 
-    if(window.pageYOffset > fixedNav) {
-        header.classList.add('navbar-fixed');
-        toTop.classList.add('flex');
-        toTop.classList.remove('hidden');
-
-    } else {
-        header.classList.remove('navbar-fixed');
-        toTop.classList.remove('flex');
-        toTop.classList.add('hidden');
-    }
-};
 
 // Hambuger
 

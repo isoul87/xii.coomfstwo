@@ -594,6 +594,10 @@ video {
   }
 }
 
+.invisible{
+  visibility: hidden;
+}
+
 .fixed{
   position: fixed;
 }
@@ -650,20 +654,12 @@ video {
   z-index: 30;
 }
 
-.z-50{
-  z-index: 50;
-}
-
 .z-\[999\]{
   z-index: 999;
 }
 
 .z-\[99\]{
   z-index: 99;
-}
-
-.z-\[9\]{
-  z-index: 9;
 }
 
 .mx-8{
@@ -863,10 +859,6 @@ video {
   width: 100%;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -892,6 +884,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-translate-y-10{
+  --tw-translate-y: -2.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 @keyframes fade-up{
   0%{
     opacity: 0;
@@ -908,24 +905,6 @@ video {
   animation: fade-up var(--default-animation-duration, 1s) var(--default-animation-timing-function, ease) var(--default-animation-delay, 0s) both;
 }
 
-@keyframes jump{
-  0%, 100%{
-    transform: scale(1);
-  }
-
-  10%{
-    transform: scale(0.8);
-  }
-
-  50%{
-    transform: scale(1.2);
-  }
-}
-
-.animate-jump{
-  animation: jump var(--default-animation-duration, 0.5s) var(--default-animation-timing-function, ease) var(--default-animation-delay, 0s) both;
-}
-
 @keyframes spin{
   to{
     transform: rotate(360deg);
@@ -934,36 +913,6 @@ video {
 
 .animate-spin{
   animation: spin var(--default-animation-duration, 1s) var(--default-animation-timing-function, linear) var(--default-animation-delay, 0s) infinite;
-}
-
-@keyframes wiggle{
-  0%, 100%{
-    transform: rotate(-3deg);
-  }
-
-  50%{
-    transform: rotate(3deg);
-  }
-}
-
-.animate-wiggle{
-  animation: wiggle var(--default-animation-duration, 1s) var(--default-animation-timing-function, ease) var(--default-animation-delay, 0s) both;
-}
-
-@keyframes fade-down{
-  0%{
-    opacity: 0;
-    transform: translateY(-2rem);
-  }
-
-  100%{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-down{
-  animation: fade-down var(--default-animation-duration, 1s) var(--default-animation-timing-function, ease) var(--default-animation-delay, 0s) both;
 }
 
 @keyframes ping{
@@ -975,20 +924,6 @@ video {
 
 .animate-ping{
   animation: ping var(--default-animation-duration, 1s) var(--default-animation-timing-function, cubic-bezier(0, 0, 0.2, 1)) var(--default-animation-delay, 0s) infinite;
-}
-
-@keyframes marquee{
-  0%{
-    transform: translateX(0);
-  }
-
-  100%{
-    transform: translateX(-50%);
-  }
-}
-
-.animate-marquee{
-  animation: marquee 25s linear infinite;
 }
 
 @keyframes bounce{
@@ -1109,8 +1044,9 @@ video {
   border-width: 4px;
 }
 
-.border{
-  border-width: 1px;
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
 .border-blue-500{
@@ -1131,11 +1067,6 @@ video {
 .border-slate-700{
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity, 1));
-}
-
-.border-black{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
 .border-t-transparent{
@@ -1181,8 +1112,8 @@ video {
   fill: #0ffcbe;
 }
 
-.stroke-black{
-  stroke: #000;
+.fill-white{
+  fill: #fff;
 }
 
 .object-cover{
@@ -1385,6 +1316,11 @@ video {
   color: rgb(34 197 94 / var(--tw-text-opacity, 1));
 }
 
+.text-green-600{
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity, 1));
+}
+
 .text-primary{
   --tw-text-opacity: 1;
   color: rgb(16 110 190 / var(--tw-text-opacity, 1));
@@ -1418,11 +1354,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-green-600{
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0{
@@ -1492,52 +1423,8 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.animate-delay-1000{
-  animation-delay: 1000ms;
-}
-
-.animate-delay-\[\]{
-  animation-delay: ;
-}
-
-.animate-delay-\[500000ms\]{
-  animation-delay: 500000ms;
-}
-
-.animate-delay-\[1\]{
-  animation-delay: 1;
-}
-
-.animate-delay-\[1000\]{
-  animation-delay: 1000;
-}
-
-.animate-delay-\[4000\]{
-  animation-delay: 4000;
-}
-
-.animate-delay-\[4000ms\]{
-  animation-delay: 4000ms;
-}
-
-.animate-delay-\[3000ms\]{
-  animation-delay: 3000ms;
-}
-
-.animate-delay-75{
-  animation-delay: 75ms;
-}
-
 .animate-delay-100{
   animation-delay: 100ms;
-}
-
-.animate-delay-150{
-  animation-delay: 150ms;
-}
-
-.animate-delay-200{
-  animation-delay: 200ms;
 }
 
 .animate-delay-300{
@@ -1548,10 +1435,6 @@ video {
   animation-delay: 500ms;
 }
 
-.animate-duration-700{
-  animation-duration: 700ms;
-}
-
 .animate-infinite{
   animation-iteration-count: infinite;
 }
@@ -1560,8 +1443,8 @@ body {
 }
 
 .navbar-fixed{
-  position: fixed;
-  z-index: 9999;
+  top: 0px;
+  left: 0px;
   background-color: rgb(15 252 190 / var(--tw-bg-opacity, 1));
   --tw-bg-opacity: 0.7;
 }
@@ -1854,10 +1737,6 @@ body {
 
   .md\:flex-row{
     flex-direction: row;
-  }
-
-  .md\:justify-between{
-    justify-content: space-between;
   }
 
   .md\:justify-evenly{
