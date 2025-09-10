@@ -1,5 +1,4 @@
-// Navbar Fixed 
-
+// Loader jalan
 window.addEventListener('load', function() {
         const loaderElement = document.getElementById('loader');
         const mainContentElement = document.getElementById('main-content');
@@ -53,7 +52,7 @@ window.addEventListener('load', function() {
   //     window.addEventListener("scroll", checkNav);
   //     checkNav(); // Cek sekali saat pertama kali
   // };
-
+// Cache pada browser
   self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open("coomfstwo-cache").then((cache) => {
@@ -81,7 +80,7 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("dist/script.js")
 }
 
-
+// Saat browser ready jalankan fungsi ini
 document.addEventListener("DOMContentLoaded", function() {
   AOS.init();
 
