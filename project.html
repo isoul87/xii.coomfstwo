@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="dist/script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="src/img/xii-removebg-preview.png">
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>xii-coomfstwo</title>
+</head>
+<body>
+
+  <div id="loader" class="fixed inset-0 flex flex-col items-center justify-center bg-gray-100 z-[999]">
+        <div class="flex mb-4 gap-3">
+            <div class="border-black border-2 rounded-full p-4 animate-fade-up animate-delay-100">
+                <img src="src/img/user.svg" alt="">
+            </div>
+            <div class="border-black border-2 rounded-full p-4 animate-fade-up animate-delay-300">
+                <img src="src/img/code.svg" alt="">
+            </div>
+            <div class="border-black border-2 rounded-full p-4 animate-fade-up animate-delay-500">
+                <img src="src/img/github-logo.svg" alt="">
+            </div>
+        </div>
+        <div>
+          <h1 class="font-bold text-xl text-green-600 text-center">XII - COOMFSTWO</h1>
+          <h1 class="font-semibold text-lg mb-10 text-center">Preparing yourself and preparing your inner self for the future</h1>
+        </div>
+      <div class="animate-spin rounded-full h-16 w-16 border-4 border-blue-500 border-t-transparent mb-10"></div>
+      <div>
+        <h1 class="animate-bounce animate-infinite">Tunggu Sebentar😊</h1>
+      </div>
+    </div>
+
+  <!-- Header Start-->
+  <header class="bg-secondary fixed left-0 top-0 w-full flex items-center z-[99] navbar-fixed" id="header" data-aos="fade-down">
+  
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-black block py-6">XII - II</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hambuger" type="button" class="block absolute right-4 lg:hidden" aria-label="hambuger">
+                        <span class="hambuger-line transition duration-350 ease-in-out origin-top-left"></span>
+                        <span class="hambuger-line transition duration-350 ease-in-out"></span>
+                        <span class="hambuger-line transition duration-350 ease-in-out  origin-bottom-left"></span>
+                    </button>
+                    <nav id="navmenu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="./index.html#home">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="./index.html#profil">Profil</a>
+                            </li>
+                            <li class="group">
+                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="./index.html#tentangkami">Tentang Kami</a>
+                            </li>
+                            <li class="group">
+                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="#">Project</a>
+                            </li>
+                            <li class="group">
+                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="./index.html#galeri">Galeri</a>
+                            </li>
+                            <li class="group">
+                                <a class="text-base text-dark py-2 mx-8 flex group-hover:text-secondary lg:group-hover:text-white dark:text-white" href="./index.html#lokasi">Locate</a>
+                            </li>
+                            <li class="flex items-center pl-8 mt-3 lg:mt-0">
+                                <!-- <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle">
+                                    <label for="dark-toggle">
+                                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-out"></div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                                </div> -->
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </div>
+</header>
+<!-- Header End-->
+
+<div id="main-content" class=" invisible -translate-y-10">
+
+  <section id="project" class="pt-20 pb-32 mt-20 bg-slate-50 dark:bg-slate-800">
+  <div class="container mx-auto px-6 md:px-12">
+    <!-- Title -->
+    <div class="text-center mb-10" data-aos="fade-up">
+      <h2 class="title1">Our Project</h2>
+      <h3 class="title2">Karya & Website Kelas</h3>
+      <p class="titledescription">
+        Beberapa hasil karya dan project keren dari teman-teman kelas kami 🎨✨
+      </p>
+    </div>
+
+    <!-- Responsive Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="bg-white dark:bg-slate-700 rounded-xl shadow-lg overflow-hidden">
+        <div class="p-4">
+          <h4 class="font-bold text-lg mb-1">Website Kelas</h4>
+          <p class="text-sm text-slate-600 dark:text-slate-300">Website resmi kelas kami. Kami mencoba membuat website dan akhirnya tercapai juga untuk membuat website kelas ini😊</p>
+          <button class="bg-green-400 mt-7 px-3 py-2 rounded-full text-white font-bold btn-cerkak"><a href="">Go here</a></button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white dark:bg-slate-700 rounded-xl shadow-lg overflow-hidden">
+        <div class="p-4">
+          <h4 class="font-bold text-lg mb-1">Cerkak</h4>
+          <p class="text-sm text-slate-600 dark:text-slate-300">Cerita pendek dalam bahasa jawa, kita tetap melestarikan budaya dengan ke kreatifan</p>
+          <button class="bg-green-400 mt-7 px-3 py-2 rounded-full text-white font-bold btn-cerkak"><a href="./cerkak.html">Go here</a></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <footer class="mt-52 bg-secondary">
+    <!-- 1 2 3  -->
+    <!-- 1 2 3 -->
+    <div class="px-4 py-16 flex flex-col md:flex-row md:justify-evenly lg:flex-row lg:justify-evenly gap-3 mb-12">
+        
+        <h1 class="font-bold text-2xl mb-6">XII - COOMFSTWO</h1>
+        
+        <div>
+            <h1 class="text-lg font-bold mb-3">TAUTAN🔗</h1>
+            <nav>
+                <ul class="flex flex-col gap-3">
+                    <li><a href="./index.html#home" class="hover:text-white">Home</a></li>
+                    <li><a href="./index.html#profil" class="hover:text-white">Profil</a></li>
+                    <li><a href="./project.html" class="hover:text-white">Project</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="h-20 mb-24">
+            <h1 class="text-lg font-bold mb-3">NUXZ TECH👋</h1>
+            <div class="flex flex-col gap-3">
+                <a href="https://www.instagram.com/nuxztech/" target="_blank" class="hover:text-white">Instagram</a>
+                <a href="https://www.tiktok.com/@bluespurny?is_from_webapp=1&sender_device=pc" target="_blank" class="hover:text-white">Tiktok</a>
+                <a href="https://www.linkedin.com/in/muhamad-naufal-kuswandana-1bb622362/?trk=public-profile-join-page" target="_blank" class="hover:text-white">Linkedin</a>
+                <a href="https://wa.me/6285807107865?text=Aku%20ingin%20membeli%20apk%20prem%20Nama apk>%20Ready" target="_blank" class="hover:text-white">WhatsApp</a>
+            </div>
+        </div>
+        
+        <div>
+            <h1 class="text-lg font-bold mb-3">MEDIA SOSIAL📢</h1>
+            <ul>
+                <li class="hover:text-white"><a href="https://www.instagram.com/xii.coomfstwo/" target="_blank">Instagram</a></li>
+                <li><a href="project.html">project</a></li>
+            </ul>
+        </div>
+        
+        <hr class="border-2">
+    </div>  
+    <h1 class="text-center">Dibuat dengan ❤️ Oleh <span class="text-primary">Naufal Kuswandana</span>, menggunakan Tailwind CSS</h1>
+    <hr class="mt-20">
+</footer>
+
+</div>
+</body>
+</html>

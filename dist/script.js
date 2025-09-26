@@ -258,6 +258,28 @@ document.addEventListener("DOMContentLoaded", () => {
   // Atur posisi awal 
   goToSlide(0);
 
-})
+});
+
+const btnFilter = document.querySelectorAll(".btn-list ul li");
+const cardItem  = document.querySelectorAll(".project-card");
+
+btnFilter.forEach(data => {
+    data.onclick = () => {
+        btnFilter.forEach(data => {
+         data.classList.remove("active");   
+        });
+         data.classList.toggle("active");
+
+        // filter images
+        const btnText = data.textContent;
+        cardItem.forEach(div => {
+            div.style.display = "none";
+            
+            if(div.getAttribute("data-filter") == btnText || btnText == "All"){
+                div.style.display ="block";
+            }
+        })
+    };
+});
 
 

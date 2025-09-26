@@ -66,3 +66,19 @@ body {
   .list {
     @apply list-disc;
   }
+
+  .active {
+    @apply border-b-2 border-black pb-1;
+  }
+
+  .btn-hover {
+    @apply hover:border-b-2 hover:border-black hover:text-3xl transition-all duration-300;
+  }
+
+  .btn-room {
+    @apply cursor-pointer text-2xl font-bold btn-hover;
+  }
+
+  .btn-cerkak {
+    @apply hover:scale-110 hover:bg-primary transition-all duration-300
+  }

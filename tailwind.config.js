@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html'],
+  content: ['./index.html', './project.html', './cerkak.html'],
   darkMode: 'class',
   theme: {
     container: {
