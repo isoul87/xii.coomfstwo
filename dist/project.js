@@ -58,9 +58,9 @@ window.addEventListener('load', function() {
     caches.open("coomfstwo-cache").then((cache) => {
       return cache.addAll([
         "/",              // halaman utama
-        "/index.html",    // file html
+        "/project.html",    // file html
         "/src/input.css",     // css
-        "/dist/script.js",     // js
+        "/dist/project.js",     // js
         "/src/img" // gambar
       ]);
     })
