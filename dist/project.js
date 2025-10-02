@@ -127,4 +127,8 @@ btnFilter.forEach(data => {
         })
     };
 });
-})
+});
+
+// Kamu melepaskannya dan 
+// beranggapan ini hanya 
+// main main saja
